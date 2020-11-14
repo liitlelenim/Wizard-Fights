@@ -1,0 +1,16 @@
+author: LittleLenim
+version: 1.0.0
+name: Wizard_Fights
+description: Fight with your friends using variety of magic wands...
+main: me.littlelenim.wizardfights.WizardFights
+
+commands:
+  giveEveryWand:
+    description: You obatain every wand from this plugi.n
+    usage: /giveEveryWand
+  giveRandomWand:
+    description: Chosen player/players get random wand.
+    usage: /giveRandomWand <player>
+  buyWand:
+    description: Gives you, a random wand for cost of 20 expirience levels.
+    usage: /buyWand
