@@ -21,13 +21,14 @@ public  class WizardFights extends JavaPlugin {
     public void onEnable()
     {
         config.addDefault("wandCost",550);
+        config.addDefault("hungerAmplifier",1.0);
         config.options().copyDefaults(true);
         saveConfig();
         getLogger().info("Wizard Fight has been enabled...");
         this.getCommand("giveRandomWand").setExecutor(new CommandGiveRandomWand());
         this.getCommand("giveEveryWand").setExecutor(new CommandGiveEveryWand());
         this.getCommand("buyWand").setExecutor(new CommandBuyWand(config));
-        getServer().getPluginManager().registerEvents(new EventListener(), this);
+        getServer().getPluginManager().registerEvents(new EventListener(config), this);
     }
     @Override
     public void onDisable()

@@ -1,0 +1,3 @@
+1.0.1
+-Added hunger amplifier to config.
+-Wand Of Flames now doesn't destroys blocks on its way.
